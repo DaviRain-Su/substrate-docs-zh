@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>📑学习 - Substra官方文档中文版</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../quick_start/index.html"><strong aria-hidden="true">1.</strong> 🔜快速开始</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chapter_1.html"><strong aria-hidden="true">1.1.</strong> Substrate一览</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.2.</strong> 启动一个节点</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> 探索代码</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> 修改运行时</div></li></ol></li><li class="chapter-item expanded "><a href="../learn/index.html" class="active"><strong aria-hidden="true">2.</strong> 📑学习</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> 欢迎来到substrate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> 区块链基础知识</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> 架构和Rust库</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.4.</strong> 网络和节点</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.5.</strong> 你能建造什么</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.6.</strong> 运行时开发</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.7.</strong> 交易和区块链基础知识</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.8.</strong> 交易生命周期</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.9.</strong> 状态转换和存储</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.10.</strong> 账户、地址和密钥</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.11.</strong> Rust for Substrate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.12.</strong> 链下操作</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.13.</strong> Substrate Connect中的轻客户端</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.14.</strong> 密码学</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.15.</strong> 共识</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.16.</strong> 跨共识消息传递</div></li></ol></li><li class="chapter-item expanded "><a href="../install/index.html"><strong aria-hidden="true">3.</strong> 🤔️安装</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Rust工具链</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Linux</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> MacOS</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Windows</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> 开发者工具</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> 排查Rust问题</div></li></ol></li><li class="chapter-item expanded "><a href="../build/index.html"><strong aria-hidden="true">4.</strong> 😄建造</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> 智能合约</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> 定制Pallet</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> 运行时存储</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> 交易权重和费用</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.5.</strong> Pallet coupling</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.6.</strong> 事件和错误</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.7.</strong> 随机性</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.8.</strong> 特权调用和Origin</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.9.</strong> 远程过程调用</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.10.</strong> 应用开发</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.11.</strong> 链条规格</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.12.</strong> 创世纪配置</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.13.</strong> 构建过程</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.14.</strong> 构建确定性运行时</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.15.</strong> 对您的代码进行故障排除</div></li></ol></li><li class="chapter-item expanded "><a href="../test/index.html"><strong aria-hidden="true">5.</strong> ❌测试</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> 单元测试</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> 调试</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.3.</strong> 基准</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> 在测试网络中模拟平行链</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.5.</strong> 检查运行时间</div></li></ol></li><li class="chapter-item expanded "><a href="../deploy/index.html"><strong aria-hidden="true">6.</strong> 🪤部署</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">6.1.</strong> 准备部署</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.2.</strong> 部署选项和工具</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.3.</strong> 密钥签名和网络操作</div></li></ol></li><li class="chapter-item expanded "><a href="../maintain/index.html"><strong aria-hidden="true">7.</strong> ⚠️维护</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">7.1.</strong> 监视器</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.2.</strong> 运行时升级</div></li></ol></li><li class="chapter-item expanded "><a href="../tutorials/index.html"><strong aria-hidden="true">8.</strong> 💾教程</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">8.1.</strong> 构建区块链</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.2.</strong> 构建应用程序逻辑</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.3.</strong> 构建平行链</div></li></ol></li><li class="chapter-item expanded "><a href="../reference/index.html"><strong aria-hidden="true">9.</strong> 参考</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">9.1.</strong> Rust API</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.2.</strong> 词汇表</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.3.</strong> 命令行工具</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.4.</strong> 运行时 API</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.5.</strong> 框架托盘</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.6.</strong> 框架宏</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.7.</strong> 帐户数据结构</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.8.</strong> 类型编码 (SCALE)</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.9.</strong> 地址格式</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.10.</strong> 交易格式</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.11.</strong> XCM参考</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.12.</strong> 操作方法快速参考指南</div></li></ol></li><li class="chapter-item expanded "><a href="../community/index.html"><strong aria-hidden="true">10.</strong> 🏠社区</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">10.1.</strong> 内容风格指南</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.2.</strong> 贡献者指南</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.3.</strong> 模板 - 操作指南</div></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Substra官方文档中文版</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="学习"><a class="header" href="#学习">📑学习</a></h1>
+<p>Substrate 是一个使用基于 Rust 的库和工具的软件开发工具包（SDK），它使您能够从模块化和可扩展的组件构建特定应用的区块链。本节中的主题解释了 Substrate 开发环境的核心原理和独特功能。</p>
+<p>这些主题旨在帮助您了解在构建基于 Substrate 的区块链时可能的选择，以及 Substrate 如何帮助您构建最适合您特定项目需求或业务模型的区块链。</p>
+<ul>
+<li>欢迎来到 Substrate 强调了使用 Substrate 开发的关键优势，这是大多数区块链和智能合约平台无法提供的。</li>
+<li>区块链基础知识提供了有关区块链开发的复杂性的背景，并介绍了常见的区块链概念、组件和术语。</li>
+<li>架构和 Rust 库描述了 Substrate 的架构和架构与核心 Rust 库之间的关系。</li>
+<li>网络和节点定义了可以使用 Substrate 构建的不同类型的网络拓扑结构以及节点可以扮演的不同角色。</li>
+<li>您可以构建什么介绍了不同开发选项的优势和限制，以及为什么您可能会选择一种方法而不是另一种方法。</li>
+<li>运行时开发强调了 Substrate 运行时的重要性，并介绍了 Substrate 运行时开发所需的核心应用程序接口和基本组件。</li>
+<li>交易和区块基础知识介绍了交易类型和构成一个区块的组件。</li>
+<li>交易生命周期解释了交易如何被接收、排队和执行，以便包含在一个区块中。</li>
+<li>状态转换和存储描述了在运行时处理的状态变化如何使用 trie 数据结构和键值数据库进行存储和管理。</li>
+<li>账户、地址和密钥解释了账户、地址和密钥之间的关系以及它们的使用方式。</li>
+<li>Rust for Substrate 强调了构建基于 Substrate 的区块链所需的特定 Rust 特性，包括特质、泛型、关联类型和宏。</li>
+<li>离链操作探讨了将某些操作处理为离链操作的原因，以及执行这些离链操作的替代方案。</li>
+<li>在 Substrate Connect 中的轻客户端描述了如何使用 Substrate Connect 将轻客户端集成到您的应用程序中，并实现与任何基于 Substrate 的链的交互。</li>
+<li>密码学提供了在 Substrate 中用于加密的哈希算法和签名方案的概述。</li>
+<li>共识描述了最常见的共识模型以及您可以为 Substrate 区块链实现的共识类型。</li>
+<li>跨共识消息提供了跨共识通信和跨共识消息（Cross-consensus messaging）的概述。</li>
+</ul>
+<p>在消化了这些入门部分的信息之后，您将准备好开始设计、构建和测试自己的定制区块链解决方案。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../install/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../install/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
